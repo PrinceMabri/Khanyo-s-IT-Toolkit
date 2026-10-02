@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Packaging / build output
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Secrets and local config -- never commit these
+.env
+.env.*
+*.key
+*.pem
+
+# Generated support reports (can contain machine details)
+Khanyo Reports/
+khanyo_support_report_*.txt
+khanyo_support_report_*.html
+khanyo_battery_report.html
+/.tmp_reports*/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

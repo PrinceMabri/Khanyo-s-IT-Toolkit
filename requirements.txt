@@ -1,0 +1,2 @@
+# Khanyo IT Toolkit has no runtime dependencies -- it uses only the Python
+# standard library (tkinter ships with the Windows Python installer).
