@@ -1,6 +1,6 @@
 # ✦ Khanyo IT Toolkit
 
-[![CI](https://github.com/YOUR-USERNAME/khanyo-it-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/khanyo-it-toolkit/actions/workflows/ci.yml)
+[![CI](https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -32,8 +32,8 @@ Tools that change the system (shown in red) are never included in the automatic 
 ## Quick start
 
 ```powershell
-git clone https://github.com/YOUR-USERNAME/khanyo-it-toolkit.git
-cd khanyo-it-toolkit
+git clone https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit.git
+cd Khanyo-s-IT-Toolkit
 pip install -e .
 khanyo
 ```

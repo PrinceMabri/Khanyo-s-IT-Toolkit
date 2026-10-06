@@ -9,10 +9,12 @@ description = "A Windows PC troubleshooting toolkit with a categorized GUI and h
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "YOUR NAME" }]
+authors = [{ name = "Prince Mabri" }]
 keywords = ["windows", "it-support", "troubleshooting", "diagnostics", "tkinter"]
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3 :: Only",
     "License :: OSI Approved :: MIT License",
     "Operating System :: Microsoft :: Windows",
     "Environment :: Win32 (MS Windows)",
@@ -28,8 +30,10 @@ build = ["pyinstaller>=6"]
 khanyo = "khanyo_toolkit.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/YOUR-USERNAME/khanyo-it-toolkit"
-Issues = "https://github.com/YOUR-USERNAME/khanyo-it-toolkit/issues"
+Homepage = "https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit"
+Repository = "https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit"
+Issues = "https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit/issues"
+Documentation = "https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit#readme"
 
 [tool.setuptools.dynamic]
 version = { attr = "khanyo_toolkit.__version__" }

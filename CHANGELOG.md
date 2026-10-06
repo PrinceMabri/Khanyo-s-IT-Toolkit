@@ -5,18 +5,27 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) and the proje
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-10-06
+
 ### Added
 - Structured findings engine with severity-aware checks for disk space, RAM pressure, uptime, pending reboot, service health, device issues, firewall and Defender state.
-- Findings panel in the Dashboard with background execution and summary added to generated text and HTML reports.
-- Dangerous action confirmation prompts, action logging, per-tool disable/enable state, and cancel-aware long-running work.
-- Dry-run preview for temp-file cleanup and a safer cancel-aware command runner.
-- Support report metadata fields for client, ticket, technician and notes, along with JSON export support and redaction controls.
+- Findings panel in the Dashboard with background execution and summaries in generated text and HTML reports.
+- Dangerous-action confirmations, action logging, per-tool enable/disable state, and cancel-aware long-running work.
+- Dry-run preview for temp-file cleanup and a cancel-aware command runner.
+- Support-report metadata for client, ticket, technician and notes, plus JSON export and redaction controls.
 - Recent report history and print-friendly HTML styling for saved support reports.
-- CLI support for listing recently saved reports without opening the GUI, including an optional `--limit` to show only the newest N files.
+- CLI support for listing recent reports with an optional `--limit`.
+- Security policy for responsible disclosure and vulnerability reporting.
+- Public-facing package metadata, documentation links, and updated repository identity.
 
 ### Changed
-- GUI action execution now updates state via the main thread queue instead of direct `after()` calls from worker threads.
-- Support reports now include a Findings Summary at the top and can carry ticket context in both text and HTML output.
+- GUI action execution updates state through the main-thread queue.
+- Support reports include a Findings Summary and ticket context in text and HTML.
+- Updated installation and contribution instructions to use the actual repository URL.
+- Refined package metadata and release-facing documentation.
+
+### Fixed
+- Replaced placeholder author and repository metadata with the project’s actual details.
 
 ## [1.3.0] - 2026-10-01
 

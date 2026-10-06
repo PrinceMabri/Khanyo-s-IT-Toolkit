@@ -5,8 +5,8 @@ Thanks for helping make Khanyo shine a bit brighter.
 ## Set up
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/khanyo-it-toolkit.git
-cd khanyo-it-toolkit
+git clone https://github.com/PrinceMabri/Khanyo-s-IT-Toolkit.git
+cd Khanyo-s-IT-Toolkit
 python -m venv .venv
 .venv\Scripts\activate          # Windows  (use: source .venv/bin/activate on Linux/macOS)
 pip install -r requirements-dev.txt
