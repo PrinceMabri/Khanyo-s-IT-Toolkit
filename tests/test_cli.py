@@ -91,7 +91,11 @@ def test_reports_tab_uses_tk_checkbutton(monkeypatch):
     monkeypatch.setattr(app_module.tk, "StringVar", DummyVar)
     monkeypatch.setattr(app_module.tk, "BooleanVar", DummyVar)
     monkeypatch.setattr(app_module.tk, "Checkbutton", lambda *args, **kwargs: DummyWidget(*args, **kwargs))
-    monkeypatch.setattr(app_module.ttk, "Checkbutton", lambda *args, **kwargs: (_ for _ in ()).throw(AssertionError("ttk.Checkbutton should not be used here")))
+
+    def unexpected_ttk_checkbutton(*args, **kwargs):
+        raise AssertionError("ttk.Checkbutton should not be used here")
+
+    monkeypatch.setattr(app_module.ttk, "Checkbutton", unexpected_ttk_checkbutton)
     monkeypatch.setattr(app_module.ttk, "Frame", lambda *args, **kwargs: DummyWidget(*args, **kwargs))
     monkeypatch.setattr(app_module.ttk, "Label", lambda *args, **kwargs: DummyWidget(*args, **kwargs))
     monkeypatch.setattr(app_module.ttk, "Entry", lambda *args, **kwargs: DummyWidget(*args, **kwargs))
